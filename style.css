@@ -493,3 +493,9 @@ footer a:hover {
   opacity: 1;
   transform: none;
 }
+
+.card a,
+.direct-contact a {
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
