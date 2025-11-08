@@ -27,7 +27,6 @@
 
       <nav class="right">
         <button class="menu" id="menuBtn" aria-label="Open menu" title="Menu">
-          <!-- hamburger -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true">
             <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -49,7 +48,6 @@
   </header>
 
   <main class="container">
-    <!-- Hero -->
     <section class="hero">
       <div>
         <span class="badge">AVAILABLE FOR WORK</span>
@@ -84,7 +82,6 @@
 
     </section>
 
-    <!-- Projects -->
     <section id="projects">
       <div class="section-head">
         <h2>Featured Projects</h2>
@@ -92,7 +89,6 @@
           ↗</a>
       </div>
       <div class="grid">
-        <!-- Project 3 -->
         <article class="card project reveal">
           <div class="thumb" role="img" aria-label="Project thumbnail">
             <img src="assets/kha.ai.png" alt="Screenshot of Project 1">
@@ -118,7 +114,7 @@
           </div>
         </article>
 
-        <!-- Project 2 -->
+
         <article class="card project reveal">
           <div class="thumb" role="img" aria-label="Project thumbnail">
             <img src="assets/diabeties.jpg" alt="Screenshot of Project 3">
@@ -145,8 +141,6 @@
           </div>
         </article>
 
-
-        <!-- Project 3 -->
         <article class="card project reveal">
           <div class="thumb" role="img" aria-label="Project thumbnail">
             <img src="assets/CNN.png" alt="Screenshot of Project 2">
@@ -178,19 +172,16 @@
       </div>
     </section>
 
-    <!-- Skills -->
     <section id="skills">
       <div class="section-head">
         <h2>Skills & Tooling</h2>
         <span class="subtle">Technologies I work with</span>
       </div>
       <div class="skills reveal">
-        <!-- <div class="skill">💻 C (DSA)</div> -->
         <div class="skill">🐍 Python (ML / AI)</div>
         <div class="skill">📊 Machine Learning / AI</div>
         <div class="skill">🌐 HTML / CSS / JavaScript</div>
         <div class="skill">⚛️ React.js</div>
-        <!-- <div class="skill">🎨 CSS</div> -->
         <div class="skill">🗄️ Node.js / Express</div>
         <div class="skill">🗃️ SQL / MongoDB</div>
         <div class="skill">🧪 Testing (Postman)</div>
@@ -199,14 +190,12 @@
     </section>
 
 
-    <!-- Experience -->
     <section id="experience">
       <div class="section-head">
         <h2>Technical Experience & Education</h2>
         <span class="subtle">A quick timeline</span>
       </div>
       <div class="grid cols-2">
-        <!-- Left side: Experience -->
         <div class="card reveal">
           <div class="timeline">
 
@@ -317,7 +306,6 @@
         </div>
 
 
-        <!-- Right side: Education -->
         <div class="card reveal">
           <div class="timeline">
             <div class="tl-item">
@@ -353,7 +341,6 @@
 
 
 
-    <!-- About -->
     <section id="about">
       <div class="section-head">
         <h2>About Me</h2>
@@ -376,7 +363,6 @@
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
       <div class="section-head">
         <h2>Let’s build something great together!</h2>
@@ -384,7 +370,6 @@
       </div>
 
       <div class="grid cols-2">
-        <!-- Contact Form -->
         <form class="card reveal" action="https://formspree.io/f/xandpykg" method="POST" id="contact-form">
           <div>
             <label for="name">Name</label>
@@ -415,7 +400,7 @@
           const form = document.getElementById("contact-form");
 
           form.addEventListener("submit", async (event) => {
-            event.preventDefault(); // stop normal submission
+            event.preventDefault();
             const formData = new FormData(form);
 
             try {
@@ -427,7 +412,7 @@
 
               if (response.ok) {
                 alert("Message sent successfully!");
-                form.reset(); // ✅ clears the form
+                form.reset();
               } else {
                 alert("Something went wrong. Please try again!");
               }
@@ -438,7 +423,6 @@
         </script>
 
 
-        <!-- Direct Contact -->
         <div class="card reveal">
           <h3 style="margin-top:0">Direct Contact</h3>
           <p class="subtle">
@@ -481,8 +465,6 @@
 
   <script src="script.js"></script>
 
-
-  <!-- QUICK START: Replace placeholders (YOUR NAME, links, emails). Host as index.html on GitHub Pages/Netlify/Vercel. -->
 </body>
 
 </html>
