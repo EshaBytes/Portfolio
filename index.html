@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eshika Giri — Portfolio</title>
+  <meta name="description"
+    content="Explore the personal portfolio of Eshika Giri, a full-stack developer & machine learning engineer. View projects, skills, resume, and contact info." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/logo-dark.png" alt="Eshika Giri Logo" class="logo">
+        <span>Esha's Lab</span>
+      </div>
+
+      <nav class="right">
+        <button class="menu" id="menuBtn" aria-label="Open menu" title="Menu">
+          <!-- hamburger -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <ul id="menuList" aria-label="Primary">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="row">
+        <button class="ghost" id="themeToggle" aria-label="Toggle theme">🌗</button>
+        <a class="cta" href="#contact">Let’s Talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <span class="badge">AVAILABLE FOR WORK</span>
+        <h1>Hi, I’m <span
+            style="background:linear-gradient(135deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">ESHIKA
+            GIRI</span>.<br>Crafting smart solutions powered by AI & ML.</h1>
+        <p class="lead">I love blending machine learning, AI, and full-stack development to craft solutions that are
+          smart, seamless, and meaningful for users.</p>
+        <div class="hero-actions">
+          <a class="cta" href="#projects">View Projects</a>
+          <a class="cta ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
+        </div>
+        <div class="row" style="margin-top:14px; gap:12px; color:var(--muted); font-size:14px">
+          <span class="pill" title="Location">📍 Kolkata, IN</span>
+          <span class="pill" title="Email">📧 eshikagiri.dev@gmail.com</span>
+          <a class="pill github" href="https://github.com/EshaBytes" target="_blank" rel="noreferrer">
+            <i class="fab fa-github"></i> GitHub ↗
+          </a>
+
+          <a class="pill linkedin" href="https://www.linkedin.com/in/eshika-giri/" target="_blank" rel="noreferrer">
+            <i class="fab fa-linkedin"></i> LinkedIn ↗
+          </a>
+
+        </div>
+      </div>
+      <div class="avatar-card">
+        <div class="avatar-blob" aria-hidden="true"></div>
+        <div class="avatar" role="img" aria-label="Portrait of Eshika">
+          <img src="assets/me.jpg" alt="Portrait of Eshika Giri" />
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="section-head">
+        <h2>Featured Projects</h2>
+        <a class="cta" href="https://github.com/EshaBytes?tab=repositories" target="_blank" rel="noreferrer">See all
+          ↗</a>
+      </div>
+      <div class="grid">
+        <!-- Project 3 -->
+        <article class="card project reveal">
+          <div class="thumb" role="img" aria-label="Project thumbnail">
+            <img src="assets/kha.ai.png" alt="Screenshot of Project 1">
+          </div>
+          <div>
+            <h3>খা.AI / Kha.AI — Restaurant Recommendation System</h3>
+            <p>An intelligent restaurant discovery platform that suggests the best dining options based on user
+              preferences, cuisine type, location, and ratings, powered by AI for a personalized food experience.</p>
+            <div class="meta">
+              <span class="pill">React</span>
+              <span class="pill">Vite</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Express</span>
+              <span class="pill">MongoDB</span>
+            </div>
+            <div class="hero-actions" style="margin-top:12px">
+              <a class="cta" href="https://github.com/EshaBytes/Restaurant-Recommendation-System/blob/main/README.md"
+                target="_blank" rel="noreferrer">Read More</a>
+              <a class="cta ghost"
+                href="hhttps://github.com/EshaBytes/Restaurant-Recommendation-System/tree/main/backend" target="_blank"
+                rel="noreferrer">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card project reveal">
+          <div class="thumb" role="img" aria-label="Project thumbnail">
+            <img src="assets/diabeties.jpg" alt="Screenshot of Project 3">
+          </div>
+          <div>
+            <h3>Diabetes Prediction Model</h3>
+            <p>Diabetes Prediction System using Ridge Regression with a PyTorch + Flask backend and an interactive
+              HTML/CSS/JavaScript frontend.</p>
+            <div class="meta">
+              <span class="pill">PyTorch</span>
+              <span class="pill">scikit-learn</span>
+              <span class="pill">HTML5</span>
+              <span class="pill">CSS3</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Flask</span>
+            </div>
+            <div class="hero-actions" style="margin-top:12px">
+              <a class="cta" href="https://github.com/EshaBytes/Diabetes-Prediction-Model-/blob/main/README.md"
+                target="_blank" rel="noreferrer">Read More</a>
+              <a class="cta ghost"
+                href="https://github.com/EshaBytes/Diabetes-Prediction-Model-/tree/main/diabetes_prediction"
+                target="_blank" rel="noreferrer">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Project 3 -->
+        <article class="card project reveal">
+          <div class="thumb" role="img" aria-label="Project thumbnail">
+            <img src="assets/CNN.png" alt="Screenshot of Project 2">
+          </div>
+          <div>
+            <h3>CNN Implementation on CIFAR-10 Dataset</h3>
+            <p>An image classification project on CIFAR-10 using a CNN built with TensorFlow/Keras, enhanced with data
+              augmentation and evaluated with key performance metrics.</p>
+            <div class="meta">
+              <span class="pill">TensorFlow</span>
+              <span class="pill">scikit-learn</span>
+              <span class="pill">Keras</span>
+              <span class="pill">NumPy</span>
+              <span class="pill">Matplotlib</span>
+              <span class="pill">Seaborn</span>
+            </div>
+            <div class="hero-actions" style="margin-top:12px">
+              <a class="cta" href="https://github.com/EshaBytes/CNN-CIFAR10/blob/main/README.md" target="_blank"
+                rel="noreferrer">Read More</a>
+              <a class="cta ghost"
+                href="https://github.com/EshaBytes/CNN-CIFAR10/blob/main/cnn_cifar10_implementation.ipynb"
+                target="_blank" rel="noreferrer">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-head">
+        <h2>Skills & Tooling</h2>
+        <span class="subtle">Technologies I work with</span>
+      </div>
+      <div class="skills reveal">
+        <!-- <div class="skill">💻 C (DSA)</div> -->
+        <div class="skill">🐍 Python (ML / AI)</div>
+        <div class="skill">📊 Machine Learning / AI</div>
+        <div class="skill">🌐 HTML / CSS / JavaScript</div>
+        <div class="skill">⚛️ React.js</div>
+        <!-- <div class="skill">🎨 CSS</div> -->
+        <div class="skill">🗄️ Node.js / Express</div>
+        <div class="skill">🗃️ SQL / MongoDB</div>
+        <div class="skill">🧪 Testing (Postman)</div>
+        <div class="skill">🔧 Git / GitHub</div>
+      </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="section-head">
+        <h2>Technical Experience & Education</h2>
+        <span class="subtle">A quick timeline</span>
+      </div>
+      <div class="grid cols-2">
+        <!-- Left side: Experience -->
+        <div class="card reveal">
+          <div class="timeline">
+
+            <div class="tl-item">
+              <h4>Cardiac Health Monitoring with Emotional Quotient Analysis · AI Wearable</h4>
+              <div class="small">2025 — Ongoing</div>
+              <p class="subtle">
+                Developing an AI-powered wearable system for real-time cardiac health monitoring
+                integrated with emotional quotient (EQ) analysis. The project focuses on collecting
+                physiological and emotional signal data, extracting patterns using ML models, and
+                generating personalized health insights for early risk detection.
+              </p>
+            </div>
+
+            <div class="tl-item">
+              <h4>Restaurant Recommendation Web App</h4>
+              <div class="small">2024 — 2025</div>
+              <p class="subtle">
+                Created a restaurant discovery platform using React, Node.js, Express and
+                MongoDB with filtering, pagination, and admin dashboard.
+              </p>
+            </div>
+
+            <div class="tl-item">
+              <h4>Portfolio Website</h4>
+              <div class="small">2025</div>
+              <p class="subtle">
+                Designed and developed a responsive personal portfolio with a clean UI,
+                dark/light theme toggle, smooth animations, and optimized loading performance.
+              </p>
+            </div>
+
+            <div class="tl-item">
+              <h4>Diabetes Prediction · Ridge Regression</h4>
+              <div class="small">2025</div>
+              <p class="subtle">
+                Built a diabetes prediction model using Ridge Regression.The backend is built with PyTorch and
+                scikit-learn, served via a Flask API, and the frontend is designed using HTML, CSS, and JavaScript for
+                an interactive user experience.
+              </p>
+            </div>
+            <div class="tl-item">
+              <h4>MLP · Heart Disease Prediction</h4>
+              <div class="small">2025</div>
+              <p class="subtle">
+                Built a Multilayer Perceptron (MLP) classifier for the UCI Heart Disease dataset
+                using Python with dropout, batch normalization, and evaluation metrics.
+              </p>
+            </div>
+
+            <div class="tl-item">
+              <h4>Transfer Learning on CIFAR-10 (MobileNetV2)</h4>
+              <div class="small">2025</div>
+              <p class="subtle">
+                Used MobileNetV2 for transfer learning with data augmentation, fine-tuning, and
+                performance tuning on the CIFAR-10 dataset.
+              </p>
+            </div>
+
+            <div class="tl-item">
+              <h4>Logistic Regression · Breast Cancer Dataset</h4>
+              <div class="small">2025</div>
+              <p class="subtle">
+                Implemented logistic regression from scratch including gradient descent,
+                feature scaling, binary classification, and model evaluation.
+              </p>
+            </div>
+
+            <div class="tl-item">
+              <h4>AdaBoost · Breast Cancer Classification</h4>
+              <div class="small">2025</div>
+              <p class="subtle">
+                Built and compared custom AdaBoost vs sklearn implementation using decision
+                stumps and multiple estimator counts, analyzing performance and accuracy.
+              </p>
+            </div>
+
+            <div class="tl-item">
+              <h4>K-Means Clustering · Iris Dataset</h4>
+              <div class="small">2025</div>
+              <p class="subtle">
+                Implemented K-Means clustering with PCA visualization and comparison of predicted
+                clusters to actual classes using Jaccard similarity.
+              </p>
+            </div>
+
+            <div class="tl-item">
+              <h4>SVM Email Spam Detection</h4>
+              <div class="small">2025</div>
+              <p class="subtle">
+                Developed an SVM-based spam classifier using linear, polynomial, and RBF kernels
+                on the Spambase dataset with confusion matrix and evaluation metrics.
+              </p>
+            </div>
+
+            <div class="tl-item">
+              <h4>CNN for CIFAR-10</h4>
+              <div class="small">2025</div>
+              <p class="subtle">
+                Created a convolutional neural network using TensorFlow/Keras for image classification
+                on the CIFAR-10 dataset.
+              </p>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+        <!-- Right side: Education -->
+        <div class="card reveal">
+          <div class="timeline">
+            <div class="tl-item">
+              <h4>B.Tech · Computer Science & Engineering</h4>
+              <div class="small">2022 — 2026</div>
+              <p class="subtle">
+                Currently pursuing a B.Tech in Computer Science and Engineering with a focused specialization in
+                Artificial Intelligence and Machine Learning at Future Institute of Technology, maintaining a CGPA of
+                8.32.
+              </p>
+            </div>
+            <div class="tl-item">
+              <h4>Higher Secondary · Computer Science</h4>
+              <div class="small">2019 — 2021</div>
+              <p class="subtle">
+                Completed Higher Secondary education in the Science stream with a focus on Mathematics, Physics,
+                Chemistry and
+                Computer Science at Jyotirmoy Public School, securing 89.6%.
+              </p>
+            </div>
+            <div class="tl-item">
+              <h4>Secondary School</h4>
+              <div class="small">2019</div>
+              <p class="subtle">
+                Completed foundational education with a strong academic record, scoring 91.2%, and actively
+                participating in coding and STEM activities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <span class="subtle">A bit of context</span>
+      </div>
+      <div class="grid cols-2">
+        <div class="card reveal">
+          Hi 👋, I’m Eshika Giri. I love coding and building fun, useful stuff, and I’m always looking for chances to share
+          ideas with people who think the same way. I want to work with a dedicated, fun team where we can turn simple
+          ideas into something user friendly and genuinely helpful for everyday people.I’m curious by nature and I love
+          learning from people who are passionate about what they do.
+          Outside tech, you’ll probably find me chilling in a cafe with a good cup of coffee ☕.
+        </div>
+        <div class="card reveal">
+          <ul style="margin:0; padding-left: 18px; line-height: 1.9">
+            <li>Open to full‑time and freelance opportunities</li>
+            <li>Timezone: IST (UTC+5:30)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-head">
+        <h2>Let’s build something great together!</h2>
+        <span class="subtle">I usually reply within 24 hours</span>
+      </div>
+
+      <div class="grid cols-2">
+        <!-- Contact Form -->
+        <form class="card reveal" action="https://formspree.io/f/xandpykg" method="POST" id="contact-form">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="grid cols-2">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" placeholder="Project, collab, etc." />
+            </div>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your idea or project..." rows="4"
+              required></textarea>
+          </div>
+
+          <button class="cta" type="submit">Send Message</button>
+        </form>
+
+        <script>
+          const form = document.getElementById("contact-form");
+
+          form.addEventListener("submit", async (event) => {
+            event.preventDefault(); // stop normal submission
+            const formData = new FormData(form);
+
+            try {
+              const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: { Accept: "application/json" },
+              });
+
+              if (response.ok) {
+                alert("Message sent successfully!");
+                form.reset(); // ✅ clears the form
+              } else {
+                alert("Something went wrong. Please try again!");
+              }
+            } catch (error) {
+              alert("Error sending message. Please try again later.");
+            }
+          });
+        </script>
+
+
+        <!-- Direct Contact -->
+        <div class="card reveal">
+          <h3 style="margin-top:0">Direct Contact</h3>
+          <p class="subtle">
+            Prefer reaching out directly? Email me at
+            <a href="mailto:eshikagiri.dev@gmail.com">eshikagiri.dev@gmail.com</a>
+            — or book a quick call.
+          </p>
+
+          <div class="hero-actions">
+            <a class="cta" href="https://cal.com/eshikagiri/15min" target="_blank" rel="noreferrer">
+              Book a 15-min Call
+            </a>
+            <a class="cta ghost" href="https://cal.com/eshikagiri" target="_blank" rel="noreferrer">
+              View Calendar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container row">
+      <span>© <span id="year"></span> Eshika Giri</span>
+      <div class="right row" style="gap:12px">
+        <a class="pill" href="https://github.com/EshaBytes" target="_blank" rel="noreferrer">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a class="pill" href="https://www.linkedin.com/in/eshika-giri/" target="_blank" rel="noreferrer">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a class="pill" href="mailto:eshikagiri.dev@gmail.com">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+
+  <!-- QUICK START: Replace placeholders (YOUR NAME, links, emails). Host as index.html on GitHub Pages/Netlify/Vercel. -->
+</body>
+
+</html>
